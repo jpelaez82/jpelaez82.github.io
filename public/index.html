@@ -24,7 +24,17 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/vendor/daterangepicker/daterangepicker.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <title>Visita Misionera Santa Maria Reina - Año 2020</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +49,31 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- JS Scripts -->
+    <script src="%PUBLIC_URL%/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="%PUBLIC_URL%/vendor/animsition/js/animsition.min.js"></script>
+    <script src="%PUBLIC_URL%/vendor/bootstrap/js/popper.js"></script>
+	  <script src="%PUBLIC_URL%/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="%PUBLIC_URL%/vendor/select2/select2.min.js"></script>
+	  <script>
+      $(".selection-2").select2({
+        minimumResultsForSearch: 20,
+        dropdownParent: $('#dropDownSelect1')
+      });
+	  </script>
+    <script src="%PUBLIC_URL%/vendor/daterangepicker/moment.min.js"></script>
+	  <script src="%PUBLIC_URL%/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="%PUBLIC_URL%/vendor/countdowntime/countdowntime.js"></script>
+    <script src="%PUBLIC_URL%/js/main.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23581568-13');
+    </script>
+
   </body>
 </html>
